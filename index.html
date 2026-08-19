@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f6b3c">
+  <title>Solitaire Number</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Solitaire Number</h1>
+      <p>Build each suit from 1 to 13.</p>
+    </div>
+    <div class="actions">
+      <button id="newGame">New Game</button>
+      <button id="hintBtn">Hint</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="top-row">
+      <div class="stock-area">
+        <div id="stock" class="pile card back" aria-label="Stock"></div>
+        <div id="waste" class="pile card empty" aria-label="Waste"></div>
+      </div>
+      <div id="foundations" class="foundations"></div>
+    </section>
+
+    <section id="status" class="status">Move cards in descending order with alternating colors.</section>
+    <section id="tableau" class="tableau"></section>
+  </main>
+
+  <div id="winModal" class="modal hidden">
+    <div class="modal-card">
+      <h2>You Win!</h2>
+      <p>All four suits are complete.</p>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Privacy Policy for Solitaire Number
+
+Solitaire Number does not collect, store, transmit, or share personal information.
+
+The game works locally on the user's device and does not require account registration.
+No analytics, advertising SDKs, location access, contacts access, camera access, microphone access, or other sensitive permissions are used.
+
+If the app is updated in the future to include online features or data collection, this privacy policy will be updated before those features are released.
+
+Contact: Replace this line with your support email before publishing.
